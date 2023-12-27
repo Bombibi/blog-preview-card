@@ -1,0 +1,110 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+/* VARIABLES */
+
+@font-face {
+  font-family: "extrabold";
+  src: url("./assets/fonts/static/Figtree-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "semibold";
+  src: url("./assets/fonts/static/Figtree-SemiBold.ttf");
+}
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+/* COMPONENTS */
+
+body {
+  background-color: var(--yellow);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+main {
+  max-width: 300px;
+  background-color: var(--white);
+  padding: 1rem;
+  border: 1px solid black;
+  box-shadow: 10px 10px 0px 0 rgba(0, 0, 0, 1);
+  border-radius: 10px;
+}
+
+main img {
+  max-width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+main button {
+  padding: 0.3rem;
+  width: 100px;
+  margin-block: 0.5rem;
+  border: none;
+  background-color: var(--yellow);
+  font-family: "extrabold";
+  border-radius: 5px;
+  display: block;
+}
+
+main p {
+  font-family: "semibold";
+  margin-block: 0.5rem;
+  font-size: 1rem;
+}
+
+main h1 {
+  font-family: "extrabold";
+  font-size: 1.5rem;
+  margin-block: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+main h1:hover {
+  color: var(--yellow);
+}
+
+main p:nth-of-type(2) {
+  color: var(--grey);
+  margin-block: 0.5rem;
+}
+
+main div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-block: 0.5rem;
+}
+
+main div img {
+  max-width: 50px;
+  margin: 0 1rem 0 0;
+}
+
+main div span {
+  font-family: "extrabold";
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
